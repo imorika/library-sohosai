@@ -10,6 +10,7 @@ import UIKit
 
 class StageOne: UIViewController {
 
+    var imageLists = ["Stage1-2-1", "Stage1-2-2", "Stage1-2-3"]
     var stageOneTexts = [
         "きょうぼくは\n「むかしのくらし」について\nしらべたいんだ。",
         "そのためには3さつの本を\nいっしょにさがして欲しい。",
@@ -21,14 +22,18 @@ class StageOne: UIViewController {
     @IBOutlet weak var themeLabel: UILabel!
     @IBOutlet weak var bookListText: UILabel!
     @IBOutlet weak var xButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        stageOneView.image = UIImage(named: "Stage1_back")
+        backButton.isHidden = true
+        stageOneView.image = UIImage(named: "Stage1-2-1")
         nextButton.imageView?.image = UIImage(named: "nextButton")
         nextButton.isHidden = false
         bookListText.isHidden = true
-        themeLabel.text = stageOneTexts[textNumber]
+        //themeLabel.text = stageOneTexts[textNumber]
         xButton.isHidden = true
         // Do any additional setup after loading the view.
     }
@@ -38,7 +43,22 @@ class StageOne: UIViewController {
     }
 
     @IBAction func clickNextButton(_ sender: Any) {
-        if (textNumber == 2){
+        if (stageOneView.image == UIImage(named: "Stage1-2-1")){
+            stageOneView.image = UIImage(named: "Stage1-2-2")
+            backButton.isHidden = false
+        }
+        else if (stageOneView.image == UIImage(named: "Stage1-2-2")){
+            stageOneView.image = UIImage(named: "Stage1-2-3")
+        }
+        else if (stageOneView.image == UIImage(named: "Stage1-2-3")){
+             self.performSegue(withIdentifier: "toStageOneGame", sender: nil)
+        }
+        else{
+            textNumber += 1
+        }
+        
+        
+        /*if (textNumber == 2){
             themeLabel.isHidden = true
             nextButton.isHidden = true
             bookListText.isHidden = false
@@ -54,10 +74,23 @@ class StageOne: UIViewController {
         }
         else {
             changeText()
-        }
+        }*/
     }
     
-    @IBAction func clickXButton(_ sender: Any) {
+    @IBAction func clickBackButton(_ sender: Any) {
+        if (stageOneView.image == UIImage(named: "Stage1-2-2")){
+            stageOneView.image = UIImage(named: "Stage1-2-1")
+            backButton.isHidden = true
+        }
+        else if (stageOneView.image == UIImage(named: "Stage1-2-3")){
+            stageOneView.image = UIImage(named: "Stage1-2-2")
+        }
+        else{
+            textNumber -= 1
+        }
+    }
+        
+        func clickXButton(_ sender: Any) {
         themeLabel.isHidden = false
         nextButton.isHidden = false
         bookListText.isHidden = true

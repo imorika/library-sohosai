@@ -10,31 +10,44 @@ import UIKit
 
 class StageTwoGame: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet var mapImage: UIImageView!
+    var quizNumber = 1
+    @IBOutlet var quizLabel: UILabel!
+    @IBOutlet var deleteButton: UIButton!
     @IBOutlet weak var answerView: UIView!
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var answerMiniLabel: UILabel!
     @IBOutlet weak var changeButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var masuCollectionView: UICollectionView!
+    var quiz = ["スタートからあるいて、1にある本をとるまでをプログラミングしよう","1からあるいて、2にある本をとるまでをプログラミングしよう","2からあるいて、3にある本をとるまでをプログラミングしよう"]
+    var quizColor = [UIColor(red: 231/255, green: 126/255, blue: 127/255, alpha: 1.0),UIColor(red: 235/255, green: 214/255, blue: 242/255, alpha: 1.0),UIColor(red: 236/255, green: 224/255, blue: 170/255, alpha: 1.0)]
     private let masume = ["マス目","にさつめ","マス目","マス目","マス目","マス目","マス目","さんさつめ","マス目",
                           "マス目","マス目","マス目","マス目","マス目","マス目","マス目","マス目","マス目",
                           "マス目","マス目","マス目","マス目","マス目","マス目","マス目","マス目","マス目",
                           "いっさつめ","マス目","マス目","マス目","マス目","マス目","マス目","マス目","マス目",
                           "マス目","マス目","マス目","マス目","マス目","マス目","マス目","マス目","はじめのます"]
-    private var photos = ["はじめのます"]
-    private let answerphotos = ["はじめのます", "まえ", "まえ", "まえ", "まえ","まえ", "まえ","まえ", "まえ", "みぎをむく", "まえ", "まえ", "まえ", "まえ", "みぎをむく","まえ", "まえ", "まえ", "まえ","まえ", "まえ","まえ",]
-    var i = 0
-  
-    let collectionViewAIdentifier = "CollectionViewA"
-    let collectionViewBIdentifier = "CollectionViewB"
+    var photos = [String]()
+    private let answerphotos = [["前進", "前進", "前進", "前進", "ほんをとる"],["前進", "前進", "前進", "前進", "前進", "前進", "前進","ひだり", "前進", "前進", "前進", "前進", "前進", "ひだり", "ほんをとる"], ["前進", "前進", "前進", "前進", "前進", "前進", "前進",  "みぎ", "前進", "ほんをとる"]]
+    private let answerphotos2 = [["前進", "前進", "前進", "ひだり","前進", "前進", "前進", "前進",  "前進", "ひだり","ほんをとる"],["前進", "前進", "前進", "前進", "前進", "前進", "前進","みぎ", "前進", "ひだり","前進", "前進", "前進", "前進", "ひだり", "ほんをとる"], ["前進", "前進", "前進", "前進", "みぎ","前進","ひだり", "前進", "前進",  "ひだり", "前進","前進", "前進", "前進", "前進",  "前進", "前進","みぎ","前進", "前進", "ひだり","ほんをとる"]]
+    private let answerphotos3 = [["前進", "前進", "前進", "ひだり", "前進", "前進", "前進", "前進", "前進", "ひだり", "ほんをとる"],["前進", "前進", "前進", "前進", "前進", "前進", "前進","ひだり", "前進", "ほんをとる"], ["前進", "ひだり", "前進", "前進", "ひだり","前進", "前進", "前進",  "前進", "前進", "前進","前進", "ほんをとる"]]
     
+    let maps = ["グループ1-1地図","グループ1-2地図","グループ1-3地図"]
+    let maps2 = ["グループ2-1地図","グループ2-2地図","グループ2-3地図"]
+    let maps3 = ["グループ3-1地図","グループ3-2地図","グループ3-3地図"]
+    
+    var i = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        deleteButton.isHidden = true
         answerView.isHidden = true
         answerLabel.isHidden = true
         answerMiniLabel.isHidden = true
         changeButton.isHidden = true
+        quizLabel.text = quiz[quizNumber-1]
+        quizLabel.backgroundColor = quizColor[quizNumber-1]
+        mapImage.image = UIImage(named: maps2[quizNumber - 1])
         
         if ((collectionView.viewWithTag(200)) != nil){
             // レイアウト設定
@@ -52,7 +65,7 @@ class StageTwoGame: UIViewController, UICollectionViewDelegate, UICollectionView
             layout2.itemSize = CGSize(width: 70, height: 70)
             layout2.minimumLineSpacing = 7
             layout2.minimumInteritemSpacing = 9
-            masuCollectionView.collectionViewLayout = layout2
+            //masuCollectionView.collectionViewLayout = layout2
             // Do any additional setup after loading the view.
         //}
         
@@ -106,53 +119,97 @@ class StageTwoGame: UIViewController, UICollectionViewDelegate, UICollectionView
     @IBAction func deleteAction(_ sender: Any) {
         photos.removeLast()
         collectionView.reloadData()
+        if (photos.count == 0){
+            deleteButton.isHidden = true
+        }
         print(photos)
     }
     @IBAction func addMoveforward(_ sender: Any) {
-        photos += ["まえ"]
+        photos += ["前進"]
         collectionView.reloadData()
+        if (photos.count != 0){
+            deleteButton.isHidden = false
+        }
         print(photos)
     }
     @IBAction func addTurnRight(_ sender: Any) {
-        photos += ["みぎをむく"]
+        photos += ["みぎ"]
         collectionView.reloadData()
+        if (photos.count != 0){
+            deleteButton.isHidden = false
+        }
         print(photos)
     }
     
     @IBAction func addTurnLeft(_ sender: Any) {
-        photos += ["ひだりをむく"]
+        photos += ["ひだり"]
         collectionView.reloadData()
+        if (photos.count != 0){
+            deleteButton.isHidden = false
+        }
         print(photos)
     }
     
-    @IBAction func checkTheAnswer(_ sender: Any) {
-        if (photos == answerphotos){
-            answerLabel.text = "せいかい！"
-            answerMiniLabel.text = "Stage3へすすもう"
-            changeButton.setImage(UIImage(named: "nextButton"), for: .normal)
-            changeButton.setTitle("", for: .normal)
-            i = 1
+    @IBAction func addpickbook(sender: AnyObject) {
+        photos += ["ほんをとる"]
+        collectionView.reloadData()
+        if (photos.count != 0){
+            deleteButton.isHidden = false
         }
-        else {
-            answerLabel.text = "ざんねん…"
-            answerMiniLabel.text = "もういちどやりなおしてみよう"
-            changeButton.setTitle("もどる", for: .normal)
-        }
-        answerView.isHidden = false
-        answerLabel.isHidden = false
-        answerMiniLabel.isHidden = false
-        changeButton.isHidden = false
+        print(photos)
     }
+    @IBAction func checkTheAnswer(_ sender: Any) {
+            if (photos == answerphotos2[quizNumber-1]){
+                answerLabel.text = "せいかい！"
+                if (quizNumber != 3){
+                    answerMiniLabel.text = "つぎのもんだいへすすもう"
+                    i = 0
+                }
+                else if (quizNumber == 3){
+                    answerMiniLabel.text = "ステージ3へすすもう"
+                    i = 1
+                }
+                changeButton.setImage(UIImage(named: "nextButton"), for: .normal)
+                changeButton.setTitle("", for: .normal)
+                
+            }
+            else {
+                answerLabel.text = "ざんねん…"
+                answerMiniLabel.text = "もういちどやりなおそう"
+                changeButton.setImage(UIImage(named:"もどる"), for: .normal)
+                i = 2
+            }
+            answerView.isHidden = false
+            answerLabel.isHidden = false
+            answerMiniLabel.isHidden = false
+            changeButton.isHidden = false
+        }
+    
     
     @IBAction func touchChangeButton(_ sender: Any) {
         if (i == 0){
+            changeButton.setTitle("", for: .normal)
             answerView.isHidden = true
             answerLabel.isHidden = true
             answerMiniLabel.isHidden = true
             changeButton.isHidden = true
+            quizNumber += 1
+            quizLabel.text = quiz[quizNumber-1]
+            quizLabel.backgroundColor = quizColor[quizNumber-1]
+            photos.removeAll()
+            collectionView.reloadData()
+            mapImage.image = UIImage(named: maps2[quizNumber - 1])
+            //mapimage.image = UIImage(named: "", for: .normal)
         }
-        else {
+        else if(i == 1){
             self.performSegue(withIdentifier: "toStage3", sender: nil)
+        }
+        else if(i == 2){
+            changeButton.setImage(UIImage(named: ""), for: .normal)
+            answerView.isHidden = true
+            answerLabel.isHidden = true
+            answerMiniLabel.isHidden = true
+            changeButton.isHidden = true
         }
     }
 }

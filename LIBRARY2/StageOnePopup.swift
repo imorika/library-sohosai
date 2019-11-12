@@ -30,7 +30,7 @@ class StageOnePopup: UIViewController {
     }
     
     // ポップアップの外側をタップした時にポップアップを閉じる
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         var tapLocation: CGPoint = CGPoint()
         // タッチイベントを取得する
@@ -43,7 +43,7 @@ class StageOnePopup: UIViewController {
         if !popUpView.frame.contains(tapLocation) {
             self.dismiss(animated: false, completion: nil)
         }
-    }
+    }*/
 
     /*
     // MARK: - Navigation

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z5l-sP-p43">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mUv-HD-UaQ">
     <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -128,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uat-hv-UXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2128" y="-2763"/>
+            <point key="canvasLocation" x="2127.517985611511" y="-2763.3093525179856"/>
         </scene>
         <!--Pre Quiz-->
         <scene sceneID="Awf-Jk-Zr8">
@@ -1774,7 +1773,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="棚たち2" id="Pzf-cv-TuK">
+                                <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="棚たち2" id="Pzf-cv-TuK">
                                     <rect key="frame" x="0.0" y="-9" width="759" height="464"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -2181,12 +2180,12 @@
         <!--View Controller-->
         <scene sceneID="GbC-Ne-YOd">
             <objects>
-                <viewController storyboardIdentifier="clear" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mUv-HD-UaQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="clear" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mUv-HD-UaQ" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wWU-ly-qIQ">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="仮クリア" translatesAutoresizingMaskIntoConstraints="NO" id="CB3-wa-d8q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ゲームクリア" translatesAutoresizingMaskIntoConstraints="NO" id="CB3-wa-d8q">
                                 <rect key="frame" x="0.0" y="20" width="1112" height="814"/>
                             </imageView>
                         </subviews>
@@ -2489,9 +2488,9 @@
         <image name="まえ" width="48.333332061767578" height="41.666667938232422"/>
         <image name="みぎをむく" width="48.333332061767578" height="41.666667938232422"/>
         <image name="イントロ4" width="370.66665649414062" height="278"/>
+        <image name="ゲームクリア" width="370.66665649414062" height="278"/>
         <image name="タイトル" width="345.66665649414062" height="80.333335876464844"/>
         <image name="マップ-1" width="267.66665649414062" height="172"/>
-        <image name="仮クリア" width="370.66665649414062" height="278"/>
         <image name="棚たち2" width="249.33332824707031" height="147.33332824707031"/>
     </resources>
 </document>

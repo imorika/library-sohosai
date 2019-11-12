@@ -16,19 +16,22 @@ class StageThreeGame: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var questionNumber = 0
     var quizNumLists = ["いちもんめ", "にもんめ", "さんもんめ"]
-    var questionLists = ["「にっぽんの図鑑」の52~53ページをみて、\nおまいりのしかたの正しいじゅんばんを\nこたえよう。", "「和食のすべてがわかる本」の4ページをみて、\n節句と食べ物の正しいじゅんばんをこたえよう", "「日本の服装の歴史①」の55ページをみて、\n5枚重ねの一例の「菖蒲」の\n正しいじゅんばんをこたえよう"]
-    private var cellItemLists = [["2回おじぎする", "手を2回たたく", "いのる", "一回おじぎする"],["七夕の節句","七草の節句", "重陽の節句","桃の節句", "端午の節句"],["あお","うすきあお","うすきこうばい","こきあお","こきこうばい"]]
-    let answerLists = [["2回おじぎする", "手を2回たたく", "いのる", "一回おじぎする"],["七草の節句", "桃の節句", "端午の節句", "七夕の節句", "重陽の節句"],["あお","こきあお","うすきあお","こきこうばい","うすきこうばい"]]
+    var questionLists = ["ひみつのカギ①をみて、\nおまいりのしかたのただしい\nじゅんばんをこたえよう。",  "ひみつのカギ②をみて、\nジャイアントインパクト説(せつ)の\nただしいじゅんばんをこたえよう","ひみつのカギ③をみて、\nひこうきのライン整備(せいび)の\nひこうきへいどうしたあとから\n離陸(りりく)するまえまでのながれの\nただしいじゅんばんをこたえよう"]
+    //var questionLists = ["「にっぽんの図鑑」の52~53ページをみて、\nおまいりのしかたの正しいじゅんばんを\nこたえよう。", "「和食のすべてがわかる本」の4ページをみて、\n節句と食べ物の正しいじゅんばんをこたえよう", "「日本の服装の歴史①」の55ページをみて、\n5枚重ねの一例の「菖蒲」の\n正しいじゅんばんをこたえよう"]
+    private var cellItemLists = [["手を2回たたく","いのる", "1回おじぎする", "2回おじぎする"],["岩石(がんせき)のかたまりが大きくなっていく","岩石(がんせき)が、円盤状(えんばんじょう)になる","かたまりが月になる","天体(てんたい)が地球(ちきゅう)にしょうとつ",],
+["最終確認(さいしゅうかくにん)","機内確認(きないかくにん)","燃料給油(ねんりょうきゅうゆ)", "コックピット点検(てんけん)","外部点検(がいぶてんけん)"]]
+    let answerLists = [["2回おじぎする", "手を2回たたく", "いのる", "1回おじぎする"],["天体(てんたい)が地球(ちきゅう)にしょうとつ","岩石(がんせき)が、円盤状(えんばんじょう)になる","岩石(がんせき)のかたまりが大きくなっていく","かたまりが月になる"],["外部点検(がいぶてんけん)", "機内確認(きないかくにん)", "コックピット点検(てんけん)", "燃料給油(ねんりょうきゅうゆ)", "最終確認(さいしゅうかくにん)"]]
     //["手を2回たたく", "いのる", "2回おじぎする", "1回おじぎする"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = editButtonItem
-        navigationItem.rightBarButtonItem!.title = "ならびかえる"
+        self.tableView.setEditing(true, animated:true)
+        //navigationItem.rightBarButtonItem = editButtonItem
+        //navigationItem.rightBarButtonItem!.title = "ならびかえる"
         quizNumLabel.text = quizNumLists[questionNumber]
         quizTextLabel.text = questionLists[questionNumber]
-        tableView.delegate = self as? UITableViewDelegate
-        tableView.dataSource = self as? UITableViewDataSource
+        //tableView.delegate = self as? UITableViewDelegate
+        //tableView.dataSource = self as? UITableViewDataSource
         // Do any additional setup after loading the view.
     }
     
@@ -37,10 +40,7 @@ class StageThreeGame: UIViewController {
         tableView.isEditing = editing
         if(self.isEditing)
         {
-            self.editButtonItem.title = "できた！"
-        }else
-        {
-            self.editButtonItem.title = "やりなおす"
+          navigationItem.rightBarButtonItem = nil
         }
     }
     
@@ -86,7 +86,8 @@ class StageThreeGame: UIViewController {
                 quizNumLabel.text = quizNumLists[questionNumber]
                 quizTextLabel.text = questionLists[questionNumber]
                 tableView.reloadData()
-                navigationItem.rightBarButtonItem!.title = "ならびかえる"
+                //navigationItem.rightBarButtonItem = editButtonItem
+                //navigationItem.rightBarButtonItem!.title = "ならびかえる"
             }
             
             
@@ -146,7 +147,12 @@ extension StageThreeGame: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath)
         cell.textLabel?.text = cellItemLists[questionNumber][indexPath.row]
+        if (questionNumber == 1){
+           cell.textLabel!.font = UIFont(name: "TsukuBRdGothic-Bold", size: 20)
+        }
+        else{
         cell.textLabel!.font = UIFont(name: "TsukuBRdGothic-Bold", size: 30)
+        }
         return cell
     }
 }

@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8417EBCE233C49D70089CBCE /* StageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417EBCD233C49D70089CBCE /* StageOne.swift */; };
-		842983BC231F6E5C00F8E336 /* TsukushiBMaruGothic.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 847DE58F2317646D0037EC52 /* TsukushiBMaruGothic.ttc */; };
-		8451763E23657AAA00524E7E /* StageThreeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451763D23657AAA00524E7E /* StageThreeGame.swift */; };
-		845176402365E10800524E7E /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451763F2365E10800524E7E /* PopupViewController.swift */; };
-		84643115230E3F62003F3AB6 /* PreQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84643114230E3F62003F3AB6 /* PreQuiz.swift */; };
-		846C2C4822FA908B00387197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C2C4722FA908B00387197 /* AppDelegate.swift */; };
-		846C2C4A22FA908B00387197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C2C4922FA908B00387197 /* ViewController.swift */; };
-		846C2C4D22FA908B00387197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846C2C4B22FA908B00387197 /* Main.storyboard */; };
-		846C2C4F22FA908C00387197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846C2C4E22FA908C00387197 /* Assets.xcassets */; };
-		846C2C5222FA908C00387197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846C2C5022FA908C00387197 /* LaunchScreen.storyboard */; };
-		846E37FD231EA9D6008177F6 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E37FC231EA9D6008177F6 /* Introduction.swift */; };
-		84969C3E235F3C430073DFF7 /* StageOneGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84969C3D235F3C430073DFF7 /* StageOneGame.swift */; };
-		84969C40235F61520073DFF7 /* CALayer+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84969C3F235F61520073DFF7 /* CALayer+UIColor.swift */; };
-		84BA48D1236166EA000EEE4E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA48D0236166EA000EEE4E /* TestViewController.swift */; };
-		84E4BD4D23661DAC000DB4CB /* StageOneGame2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4BD4C23661DAC000DB4CB /* StageOneGame2.swift */; };
-		84E4BD5123663C25000DB4CB /* StageOnePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4BD5023663C25000DB4CB /* StageOnePopup.swift */; };
+		8416EB14236AF01400FDE059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8416EB12236AF01300FDE059 /* LaunchScreen.storyboard */; };
+		8416EB15236AF01400FDE059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8416EB13236AF01400FDE059 /* Main.storyboard */; };
+		8416EB17236AF62800FDE059 /* TsukushiBMaruGothic.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 8461C0382369D0650024CAB4 /* TsukushiBMaruGothic.ttc */; };
+		8461C0392369D0650024CAB4 /* TsukushiBMaruGothic.ttc in Sources */ = {isa = PBXBuildFile; fileRef = 8461C0382369D0650024CAB4 /* TsukushiBMaruGothic.ttc */; };
+		84A46BF2236AFE9F00C2A6D3 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A46BF1236AFE9F00C2A6D3 /* Introduction.swift */; };
+		84A46BF4236BBD8400C2A6D3 /* StageTwoExplain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A46BF3236BBD8400C2A6D3 /* StageTwoExplain.swift */; };
+		84C844612369D35700E108AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C844602369D35700E108AD /* Assets.xcassets */; };
+		84DA28AA2369CDA8005A5020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28A92369CDA8005A5020 /* ViewController.swift */; };
+		84DA28AC2369CDDF005A5020 /* StageOneGame2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28AB2369CDDF005A5020 /* StageOneGame2.swift */; };
+		84DA28AE2369CDF3005A5020 /* PreQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28AD2369CDF3005A5020 /* PreQuiz.swift */; };
+		84DA28B02369CE08005A5020 /* StageOnePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28AF2369CE08005A5020 /* StageOnePopup.swift */; };
+		84DA28B22369CE16005A5020 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28B12369CE16005A5020 /* PopupViewController.swift */; };
+		84DA28B42369CE3B005A5020 /* CALayer+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28B32369CE3A005A5020 /* CALayer+UIColor.swift */; };
+		84DA28B62369CE4C005A5020 /* StageThreeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28B52369CE4C005A5020 /* StageThreeGame.swift */; };
+		84DA28B82369CE64005A5020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28B72369CE64005A5020 /* AppDelegate.swift */; };
+		84DA28BA2369CE6F005A5020 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28B92369CE6F005A5020 /* TestViewController.swift */; };
+		84DA28BC2369CE85005A5020 /* StageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28BB2369CE85005A5020 /* StageOne.swift */; };
+		84DA28BE2369CE9D005A5020 /* StageOneGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA28BD2369CE9D005A5020 /* StageOneGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8416EB12236AF01300FDE059 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LIBRARY2/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8416EB13236AF01400FDE059 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = LIBRARY2/Main.storyboard; sourceTree = "<group>"; };
 		8417EBCD233C49D70089CBCE /* StageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
 		8451763D23657AAA00524E7E /* StageThreeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageThreeGame.swift; sourceTree = "<group>"; };
 		8451763F2365E10800524E7E /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		8461C0382369D0650024CAB4 /* TsukushiBMaruGothic.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = TsukushiBMaruGothic.ttc; sourceTree = "<group>"; };
+		8461C03A2369D1060024CAB4 /* TsukushiBMaruGothic.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = TsukushiBMaruGothic.ttc; sourceTree = "<group>"; };
 		84643114230E3F62003F3AB6 /* PreQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreQuiz.swift; sourceTree = "<group>"; };
 		846C2C4422FA908B00387197 /* LIBRARY2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIBRARY2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846C2C4722FA908B00387197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,12 +43,27 @@
 		846C2C4E22FA908C00387197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846C2C5122FA908C00387197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846C2C5322FA908C00387197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		846E37FC231EA9D6008177F6 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
 		847DE58F2317646D0037EC52 /* TsukushiBMaruGothic.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = TsukushiBMaruGothic.ttc; sourceTree = "<group>"; };
 		84969C3D235F3C430073DFF7 /* StageOneGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOneGame.swift; sourceTree = "<group>"; };
 		84969C3F235F61520073DFF7 /* CALayer+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UIColor.swift"; sourceTree = "<group>"; };
+		84A46BF1236AFE9F00C2A6D3 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
+		84A46BF3236BBD8400C2A6D3 /* StageTwoExplain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTwoExplain.swift; sourceTree = "<group>"; };
 		84BA48D0236166EA000EEE4E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		84E4BD4C23661DAC000DB4CB /* StageOneGame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StageOneGame2.swift; path = LIBRARY2/StageOneGame2.swift; sourceTree = "<group>"; };
+		84C844602369D35700E108AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DA28A92369CDA8005A5020 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84DA28AB2369CDDF005A5020 /* StageOneGame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOneGame2.swift; sourceTree = "<group>"; };
+		84DA28AD2369CDF3005A5020 /* PreQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreQuiz.swift; sourceTree = "<group>"; };
+		84DA28AF2369CE08005A5020 /* StageOnePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOnePopup.swift; sourceTree = "<group>"; };
+		84DA28B12369CE16005A5020 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		84DA28B32369CE3A005A5020 /* CALayer+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UIColor.swift"; sourceTree = "<group>"; };
+		84DA28B52369CE4C005A5020 /* StageThreeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageThreeGame.swift; sourceTree = "<group>"; };
+		84DA28B72369CE64005A5020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84DA28B92369CE6F005A5020 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		84DA28BB2369CE85005A5020 /* StageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
+		84DA28BD2369CE9D005A5020 /* StageOneGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOneGame.swift; sourceTree = "<group>"; };
+		84DA28C02369CEF0005A5020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84DA28C22369CEF1005A5020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LIBRARY2/Main.storyboard; sourceTree = "<group>"; };
+		84E4BD4C23661DAC000DB4CB /* StageOneGame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOneGame2.swift; sourceTree = "<group>"; };
 		84E4BD5023663C25000DB4CB /* StageOnePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOnePopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +81,25 @@
 		846C2C3B22FA908B00387197 = {
 			isa = PBXGroup;
 			children = (
-				84E4BD4C23661DAC000DB4CB /* StageOneGame2.swift */,
+				84A46BF3236BBD8400C2A6D3 /* StageTwoExplain.swift */,
+				8416EB12236AF01300FDE059 /* LaunchScreen.storyboard */,
+				8416EB13236AF01400FDE059 /* Main.storyboard */,
+				84C844602369D35700E108AD /* Assets.xcassets */,
+				8461C0382369D0650024CAB4 /* TsukushiBMaruGothic.ttc */,
+				8461C03A2369D1060024CAB4 /* TsukushiBMaruGothic.ttc */,
+				84DA28BF2369CEF0005A5020 /* LaunchScreen.storyboard */,
+				84DA28C12369CEF1005A5020 /* Main.storyboard */,
+				84DA28BD2369CE9D005A5020 /* StageOneGame.swift */,
+				84DA28BB2369CE85005A5020 /* StageOne.swift */,
+				84DA28B92369CE6F005A5020 /* TestViewController.swift */,
+				84DA28B72369CE64005A5020 /* AppDelegate.swift */,
+				84DA28B52369CE4C005A5020 /* StageThreeGame.swift */,
+				84DA28B32369CE3A005A5020 /* CALayer+UIColor.swift */,
+				84DA28B12369CE16005A5020 /* PopupViewController.swift */,
+				84DA28AF2369CE08005A5020 /* StageOnePopup.swift */,
+				84DA28AD2369CDF3005A5020 /* PreQuiz.swift */,
+				84DA28AB2369CDDF005A5020 /* StageOneGame2.swift */,
+				84DA28A92369CDA8005A5020 /* ViewController.swift */,
 				846C2C4622FA908B00387197 /* LIBRARY2 */,
 				846C2C4522FA908B00387197 /* Products */,
 			);
@@ -77,6 +116,7 @@
 		846C2C4622FA908B00387197 /* LIBRARY2 */ = {
 			isa = PBXGroup;
 			children = (
+				84E4BD4C23661DAC000DB4CB /* StageOneGame2.swift */,
 				8451763F2365E10800524E7E /* PopupViewController.swift */,
 				84E4BD5023663C25000DB4CB /* StageOnePopup.swift */,
 				847DE58F2317646D0037EC52 /* TsukushiBMaruGothic.ttc */,
@@ -85,7 +125,7 @@
 				846C2C4B22FA908B00387197 /* Main.storyboard */,
 				846C2C4922FA908B00387197 /* ViewController.swift */,
 				84643114230E3F62003F3AB6 /* PreQuiz.swift */,
-				846E37FC231EA9D6008177F6 /* Introduction.swift */,
+				84A46BF1236AFE9F00C2A6D3 /* Introduction.swift */,
 				8417EBCD233C49D70089CBCE /* StageOne.swift */,
 				84969C3D235F3C430073DFF7 /* StageOneGame.swift */,
 				84BA48D0236166EA000EEE4E /* TestViewController.swift */,
@@ -139,6 +179,7 @@
 			knownRegions = (
 				en,
 				Base,
+				global,
 			);
 			mainGroup = 846C2C3B22FA908B00387197;
 			productRefGroup = 846C2C4522FA908B00387197 /* Products */;
@@ -155,10 +196,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846C2C5222FA908C00387197 /* LaunchScreen.storyboard in Resources */,
-				846C2C4F22FA908C00387197 /* Assets.xcassets in Resources */,
-				846C2C4D22FA908B00387197 /* Main.storyboard in Resources */,
-				842983BC231F6E5C00F8E336 /* TsukushiBMaruGothic.ttc in Resources */,
+				8416EB17236AF62800FDE059 /* TsukushiBMaruGothic.ttc in Resources */,
+				8416EB14236AF01400FDE059 /* LaunchScreen.storyboard in Resources */,
+				8416EB15236AF01400FDE059 /* Main.storyboard in Resources */,
+				84C844612369D35700E108AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,18 +210,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E4BD4D23661DAC000DB4CB /* StageOneGame2.swift in Sources */,
-				846C2C4A22FA908B00387197 /* ViewController.swift in Sources */,
-				846E37FD231EA9D6008177F6 /* Introduction.swift in Sources */,
-				84643115230E3F62003F3AB6 /* PreQuiz.swift in Sources */,
-				84E4BD5123663C25000DB4CB /* StageOnePopup.swift in Sources */,
-				845176402365E10800524E7E /* PopupViewController.swift in Sources */,
-				8451763E23657AAA00524E7E /* StageThreeGame.swift in Sources */,
-				84969C40235F61520073DFF7 /* CALayer+UIColor.swift in Sources */,
-				8417EBCE233C49D70089CBCE /* StageOne.swift in Sources */,
-				84969C3E235F3C430073DFF7 /* StageOneGame.swift in Sources */,
-				846C2C4822FA908B00387197 /* AppDelegate.swift in Sources */,
-				84BA48D1236166EA000EEE4E /* TestViewController.swift in Sources */,
+				8461C0392369D0650024CAB4 /* TsukushiBMaruGothic.ttc in Sources */,
+				84DA28BE2369CE9D005A5020 /* StageOneGame.swift in Sources */,
+				84A46BF2236AFE9F00C2A6D3 /* Introduction.swift in Sources */,
+				84A46BF4236BBD8400C2A6D3 /* StageTwoExplain.swift in Sources */,
+				84DA28BC2369CE85005A5020 /* StageOne.swift in Sources */,
+				84DA28BA2369CE6F005A5020 /* TestViewController.swift in Sources */,
+				84DA28B82369CE64005A5020 /* AppDelegate.swift in Sources */,
+				84DA28B62369CE4C005A5020 /* StageThreeGame.swift in Sources */,
+				84DA28B42369CE3B005A5020 /* CALayer+UIColor.swift in Sources */,
+				84DA28B22369CE16005A5020 /* PopupViewController.swift in Sources */,
+				84DA28B02369CE08005A5020 /* StageOnePopup.swift in Sources */,
+				84DA28AE2369CDF3005A5020 /* PreQuiz.swift in Sources */,
+				84DA28AC2369CDDF005A5020 /* StageOneGame2.swift in Sources */,
+				84DA28AA2369CDA8005A5020 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +244,22 @@
 				846C2C5122FA908C00387197 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84DA28BF2369CEF0005A5020 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DA28C02369CEF0005A5020 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84DA28C12369CEF1005A5020 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DA28C22369CEF1005A5020 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -257,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -312,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -325,18 +384,19 @@
 		846C2C5722FA908C00387197 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CA99DHLU6B;
-				INFOPLIST_FILE = LIBRARY2/Info.plist;
+				DEVELOPMENT_TEAM = 3G77NT59TK;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "izm-pglvu7.LIBRARY2";
+				PRODUCT_BUNDLE_IDENTIFIER = wakameog.LIBRARY2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -345,18 +405,19 @@
 		846C2C5822FA908C00387197 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CA99DHLU6B;
-				INFOPLIST_FILE = LIBRARY2/Info.plist;
+				DEVELOPMENT_TEAM = 3G77NT59TK;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "izm-pglvu7.LIBRARY2";
+				PRODUCT_BUNDLE_IDENTIFIER = wakameog.LIBRARY2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
